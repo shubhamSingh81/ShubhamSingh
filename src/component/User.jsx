@@ -17,6 +17,33 @@ export const User = () => {
     { firstName: "Shubham", lastName: "singh", email: "shubham@gmail.com", phoneNumber: "987654365", address: "deo" },
     { firstName: "Sahu", lastName: "singh", email: "Sahu.singh@gmail.com", phoneNumber: "9876543433", address: "Neomar" },
     { firstName: "Shivani", lastName: "singh", email: "Shivani@gmail.com", phoneNumber: "987654345", address: "MENT" },
+     { firstName: "Shubham", lastName: "singh", email: "shubham.singh@gmail.com", phoneNumber: "987654321", address: "gujrat" },
+    { firstName: "Saurabh", lastName: "Tiwari", email: "Saurabh.singh@gmail.com", phoneNumber: "987654329", address: "Vapi" },
+    { firstName: "Satyam", lastName: "Sahu", email: "Satyam.singh@gmail.com", phoneNumber: "987654320", address: "Surat" },
+    { firstName: "Shivam", lastName: "Sombi", email: "Shivam.singh@gmail.com", phoneNumber: "987654392", address: "Valsad" },
+    { firstName: "Somil", lastName: "singh", email: "Somil.singh@gmail.com", phoneNumber: "987654371", address: "gujrat" },
+    { firstName: "Shyam", lastName: "singh", email: "Shyam.singh@gmail.com", phoneNumber: "987654334", address: "Daman" },
+    { firstName: "Shubham", lastName: "singh", email: "shubham@gmail.com", phoneNumber: "987654365", address: "deo" },
+    { firstName: "Sahu", lastName: "singh", email: "Sahu.singh@gmail.com", phoneNumber: "9876543433", address: "Neomar" },
+    { firstName: "Shivani", lastName: "singh", email: "Shivani@gmail.com", phoneNumber: "987654345", address: "MENT" },
+     { firstName: "Shubham", lastName: "singh", email: "shubham.singh@gmail.com", phoneNumber: "987654321", address: "gujrat" },
+    { firstName: "Saurabh", lastName: "Tiwari", email: "Saurabh.singh@gmail.com", phoneNumber: "987654329", address: "Vapi" },
+    { firstName: "Satyam", lastName: "Sahu", email: "Satyam.singh@gmail.com", phoneNumber: "987654320", address: "Surat" },
+    { firstName: "Shivam", lastName: "Sombi", email: "Shivam.singh@gmail.com", phoneNumber: "987654392", address: "Valsad" },
+    { firstName: "Somil", lastName: "singh", email: "Somil.singh@gmail.com", phoneNumber: "987654371", address: "gujrat" },
+    { firstName: "Shyam", lastName: "singh", email: "Shyam.singh@gmail.com", phoneNumber: "987654334", address: "Daman" },
+    { firstName: "Shubham", lastName: "singh", email: "shubham@gmail.com", phoneNumber: "987654365", address: "deo" },
+    { firstName: "Sahu", lastName: "singh", email: "Sahu.singh@gmail.com", phoneNumber: "9876543433", address: "Neomar" },
+    { firstName: "Shivani", lastName: "singh", email: "Shivani@gmail.com", phoneNumber: "987654345", address: "MENT" },
+     { firstName: "Shubham", lastName: "singh", email: "shubham.singh@gmail.com", phoneNumber: "987654321", address: "gujrat" },
+    { firstName: "Saurabh", lastName: "Tiwari", email: "Saurabh.singh@gmail.com", phoneNumber: "987654329", address: "Vapi" },
+    { firstName: "Satyam", lastName: "Sahu", email: "Satyam.singh@gmail.com", phoneNumber: "987654320", address: "Surat" },
+    { firstName: "Shivam", lastName: "Sombi", email: "Shivam.singh@gmail.com", phoneNumber: "987654392", address: "Valsad" },
+    { firstName: "Somil", lastName: "singh", email: "Somil.singh@gmail.com", phoneNumber: "987654371", address: "gujrat" },
+    { firstName: "Shyam", lastName: "singh", email: "Shyam.singh@gmail.com", phoneNumber: "987654334", address: "Daman" },
+    { firstName: "Shubham", lastName: "singh", email: "shubham@gmail.com", phoneNumber: "987654365", address: "deo" },
+    { firstName: "Sahu", lastName: "singh", email: "Sahu.singh@gmail.com", phoneNumber: "9876543433", address: "Neomar" },
+    { firstName: "Shivani", lastName: "singh", email: "Shivani@gmail.com", phoneNumber: "987654345", address: "MENT" }
   ]
 
   const [state, setState] = useState(data);
@@ -80,7 +107,7 @@ export const User = () => {
           <button className="btn btn-outline-success my-2 my-sm-0" onClick={handleSearch}>Search</button>
         </form>
       </nav>
-      <AgGridReact rowData={state} columnDefs={columns} defaultColDef={defaultColDefinition} />
+      <AgGridReact rowData={state} columnDefs={columns} defaultColDef={defaultColDefinition} pagination={true} paginationPageSize={5}/>
     </div>
   )
 }
