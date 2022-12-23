@@ -80,8 +80,8 @@ export const User = () => {
   return (
     <div className='ag-theme-alpine'
       style={{
-        height: "500px",
-        width: "1395px", 
+        height: "360px",
+        width: "1295px", 
         textAlign:"center",
         alignItems:"center",
         overflow:"none"
@@ -97,10 +97,6 @@ export const User = () => {
         <i className='fa fa-mobile text-warning' /><h1>Click Me TO Go to About Page</h1><span className='text-warning'>
         </span>
       </Link>
-
-
-
-
       <nav className="navbar navbar-light bg-light">
         <form className="form-inline">
           <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" onChange={() => setSearchKey(e.target.value)} /> {""}
