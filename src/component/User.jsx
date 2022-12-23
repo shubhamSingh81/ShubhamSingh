@@ -30,7 +30,7 @@ export const User = () => {
       headerName: "LastName", field: "lastName"
     },
     {
-      headerName: "Email", field: "email"
+      headerName: "Email", field: "email", floatingFilter: true
     },
     {
       headerName: "PhoneNumber", field: "phoneNumber"
